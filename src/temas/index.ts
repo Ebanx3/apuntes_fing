@@ -12,9 +12,5 @@ export const temas: Tema[] = [
     tags: [labels.cdivv, labels.mat],
     fileName: "Complejos"
   },
-  {
-    title: "Matriz",
-    tags: [labels.gal2, labels.mat],
-    fileName:"Matriz"
-  }
+  
 ];

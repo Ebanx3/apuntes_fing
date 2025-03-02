@@ -18,7 +18,7 @@ export const ContenedorTemas = ({ label }: Props) => {
   return (
     <div className="flex flex-col gap-4">
       {temasVisibles.map((tema) => (
-        <Tema tema={tema}/>
+        <Tema tema={tema} key={tema.title}/>
       ))}
     </div>
   );
