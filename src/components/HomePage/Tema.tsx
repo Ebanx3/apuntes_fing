@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Tema as TemaType } from "../../temas";
+import { Tema as TemaType } from "../../../temas";
 
 interface Props {
   tema: TemaType;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Tema as TemaType, temas } from "../../temas";
+import { Tema as TemaType, temas } from "../../../temas";
 import { Tema } from "./Tema";
 
 interface Props {

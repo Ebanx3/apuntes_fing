@@ -1,4 +1,4 @@
-import { labels } from "../Labels";
+import { labels } from "../src/Labels";
 
 export type Tema = {
   title: string;
