@@ -7,26 +7,14 @@ import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 
 import "./TemaPage.css";
+import { readMdFile } from "../../readMDfile";
 
 export const TemaPage = () => {
   const [contenido, setContenido] = useState("");
   const { tema } = useParams();
 
   useEffect(() => {
-    (async () => {
-      try {
-        const context = import.meta.glob("../../temas/*.md");
-        const articleFunc = context[`../../temas/${tema}.md`];
-        if (articleFunc) {
-          const module = (await articleFunc()) as { default: string };
-          setContenido(module.default);
-        } else {
-          setContenido("Artículo no encontrado");
-        }
-      } catch {
-        setContenido("Error al cargar el artículo");
-      }
-    })();
+    readMdFile(tema!).then((res: string) => setContenido(res));
   }, [tema]);
 
   return (
