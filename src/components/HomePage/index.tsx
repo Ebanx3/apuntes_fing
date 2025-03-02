@@ -9,7 +9,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <title>Apuntes</title>
+      <title>Apuntes Ingeniería</title>
 
       <h1 className="text-3xl font-bold text-zinc-800 dark:text-zinc-100">
         Apuntes de Ingeniería
