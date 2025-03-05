@@ -1,4 +1,26 @@
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+h2 {
+    font-size: 1.3rem;
     font-weight: 500;
+    margin-top: 6px;
+}
+
+p{
+    margin-bottom: 6px;
+    white-space: pre-line;
+}
+
+ol{
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+ul{
+    list-style: square;
+    margin-left: 20px;
 }

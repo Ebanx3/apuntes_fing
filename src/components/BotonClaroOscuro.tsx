@@ -15,5 +15,5 @@ export const BotonClaroOscuro = () => {
     }
   }, [darkMode]);
 
-  return <button onClick={()=> setDarkMode(value => !value)}className="cursor-pointer absolute top-6 right-6">{darkMode? <IconoSol/> :<IconoLuna /> }</button>;
+  return <button onClick={()=> setDarkMode(value => !value)}className="cursor-pointer fixed top-6 right-6">{darkMode? <IconoSol/> :<IconoLuna /> }</button>;
 };
